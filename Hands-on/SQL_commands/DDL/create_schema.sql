@@ -1,4 +1,4 @@
-USE azuretraining
+USE cgsqltraining
 GO
 
 -- create schemas -- 
@@ -12,4 +12,7 @@ CREATE SCHEMA Products AUTHORIZATION dbo
 GO 
 
 CREATE SCHEMA LookupTables AUTHORIZATION dbo 
+GO 
+
+CREATE SCHEMA HumanResources AUTHORIZATION dbo 
 GO 
