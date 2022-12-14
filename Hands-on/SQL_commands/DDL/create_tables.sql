@@ -1,6 +1,23 @@
  USE cgsqltraining
  GO
  
+-- Schemas to be created before the table creation in SQL server 
+-- create schemas -- 
+CREATE SCHEMA Customers AUTHORIZATION dbo 
+GO
+
+CREATE SCHEMA Orders AUTHORIZATION dbo 
+GO 
+
+CREATE SCHEMA Products AUTHORIZATION dbo 
+GO 
+
+CREATE SCHEMA LookupTables AUTHORIZATION dbo 
+GO 
+
+CREATE SCHEMA HumanResources AUTHORIZATION dbo 
+GO 
+
 -- Create Table --
 
 -- create Customer table -- 
