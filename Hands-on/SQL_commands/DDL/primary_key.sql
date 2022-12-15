@@ -20,7 +20,7 @@ FirstName VARCHAR(50) NULL,
 LastName VARCHAR(50) NULL,
 ModifiedDate DATE NOT NULL,
 CONSTRAINT pk_customer PRIMARY KEY (CustomerID))
-gO 
+go 
 
 drop table Customers.CustomerAddress
 go 

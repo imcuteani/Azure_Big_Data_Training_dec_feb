@@ -31,3 +31,14 @@ FROM
 Production.Product
 ORDER BY 
 ListPrice DESC; 
+
+-- using TOP command WITH TIES to include the rows that match the values in the last row 
+
+SELECT TOP 3 WITH TIES 
+Name, 
+ListPrice
+FROM 
+Production.Product 
+ORDER BY
+ListPrice DESC; 
+
