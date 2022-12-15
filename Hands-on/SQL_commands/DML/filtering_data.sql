@@ -1,68 +1,70 @@
 -- filtering data -- 
 
-use sqltraining;
+use "AdventureWorks2016";
+
+--select * from Production.Product
 
 select ProductID,
-ProductName, 
-ProductCost,
+Name, 
+StandardCost,
 ListPrice,
-ProductDescription 
+Size
 from 
-Products.Product 
+Production.Product 
 where 
-ListPrice < 15; 
+ListPrice < 10; 
 
 select ProductID, 
-ProductName, 
-ProductCost, 
+Name, 
+StandardCost, 
 ListPrice,
-ProductDescription 
+Size
 from 
-Products.Product 
+Production.Product 
 where 
 ListPrice > 8.99 AND ListPrice < 35.99; 
 
 select ProductID, 
-ProductName,
-ProductCost,
+Name,
+StandardCost,
 ListPrice,
-ProductDescription
+Size
 FROM
-Products.Product
+Production.Product
 where ListPrice > 7.99 OR ListPrice < 34.99;
 
 select ProductID, 
-ProductName, 
-ProductCost, 
+Name, 
+StandardCost, 
 ListPrice,
-ProductDescription 
+Size
 from 
-Products.Product
-where ProductName > 'Mu';
+Production.Product
+where Name > 'Mu';
 
 
 select ProductID, 
-ProductName,
+Name,
 ListPrice
 from 
-Products.Product
+Production.Product
 where (ListPrice BETWEEN 2 AND 15) 
 OR (ListPrice BETWEEN 18 AND 50);
 
 select ProductID, 
-ProductName,
+Name,
 ListPrice
 from 
-Products.Product
+Production.Product
 where (ListPrice BETWEEN 2 AND 15) 
 AND (ListPrice BETWEEN 18 AND 50);
 
 select ProductID,
-ProductName,
+Name,
 ListPrice 
 from 
-Products.Product
-where ProductName LIKE '%msun%'
+Production.Product
+where Name LIKE '%msun%'
 
 
 
