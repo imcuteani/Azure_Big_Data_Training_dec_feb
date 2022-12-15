@@ -46,3 +46,11 @@ INSERT INTO Products.Product (ProductID, ProductName, ProductCost, ListPrice, Pr
 INSERT INTO Products.Product (ProductID, ProductName, ProductCost, ListPrice, ProductDescription) VALUES (9, 'Daikin', 6.66, 12.55,'Refrigerator')
 
 select * from Products.Product
+
+SET IDENTITY_INSERT [Products].[Product] OFF 
+
+SET IDENTITY_INSERT [Orders].[OrderDetail] ON
+INSERT INTO Orders.OrderDetail (OrderDetailID, SKU, Quantity, UnitPrice, ShipDate) VALUES (1, 'Samsung', 10, 6.55,'2022-03-05')
+INSERT INTO Orders.OrderDetail(OrderDetailID, SKU, Quantity, UnitPrice, ShipDate) VALUES (2, 'Sansui', 7, 16.55,'2021-03-06')
+
+SET IDENTITY_INSERT [Orders].[OrderDetail] OFF 
