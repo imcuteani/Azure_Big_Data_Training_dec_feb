@@ -9,6 +9,20 @@
 
 -- Create table then add foreign keys to the existing tables -- 
 
-use azuretraining
+use cgsqltraining
 go 
 
+create table LookupTables.STATE
+(StateID int IDENTITY(1,1),
+StateProvince VARCHAR(50) NOT NULL UNIQUE,
+CountryID int NOT NULL,
+StateProvinceAbbrev CHAR(2) NOT NULL,
+CONSTRAINT pk_stateprovince PRIMARY KEY (StateID))
+go 
+
+-- adding FOREIGN key 
+
+alter table LookupTables.STATE
+add CONSTRAINT fk_countrytostate FOREIGN KEY (CountryID)
+REFERENCES LookupTables.Country(CountryID)
+go 
