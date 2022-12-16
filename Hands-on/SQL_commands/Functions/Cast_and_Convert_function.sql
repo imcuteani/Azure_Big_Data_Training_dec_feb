@@ -29,3 +29,26 @@ from Customers.CustomerAddress
 
 -- 1. CAST function is used to convert a data type without a specific format
 -- 2. CONVERT function is used to do the converting and formatting of the data type at the same time 
+
+-- ISNULL() and Coalesce() function
+-- The SQL Coalesce and ISNULL() functions are used to handle NULL values. During the expression
+-- evaluation, processes the NULL values & they are replaced with user-defined value. 
+
+-- The SQL Coalesce() function evaluates the argements in order and always return the first non-null value from 
+-- the defined argument list 
+
+-- properties of Coalesce() function 
+
+-- 1. Expressions must be same data-type
+-- 2. It can contain multiple expressions
+-- 3. The SQL coalease function is a syntatic shortcut for case expression
+
+SELECT COALESCE (NULL, NULL, NULL, NULL, 'SQL')
+
+use AdventureWorks2016;
+
+SELECT FirstName + ' ' + COALESCE(MiddleName,' ') + ' ' + LastName FROM Person.Person;   
+
+
+
+
