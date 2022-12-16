@@ -18,6 +18,12 @@ INNER JOIN
 SalesLT.SalesOrderDetail b 
 ON a.ProductID = b.ProductID AND a.Color = 'Black';
 
+use AdventureWorksLT2019;
+
+select * from SalesLT.Product
+
+select * from SalesLT.SalesOrderDetail
+
 
 -- Retrieve ProductID, Name, SalesOrderID, UnitPrice etc. from Product and SalesOrderDetail tables & also 
 -- get those products whose color is 'Red' 
