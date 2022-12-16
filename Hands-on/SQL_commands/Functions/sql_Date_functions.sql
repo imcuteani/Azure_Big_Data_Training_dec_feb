@@ -23,3 +23,27 @@ select GETDATE() as 'DateAndTime';
 select DATENAME(YEAR, GETDATE()) as 'Year';
 select DATENAME(QUARTER, GETDATE()) as 'Quarter';
 select DATENAME(MONTH, GETDATE()) as 'Month'; 
+
+-- DATEDIFF() function 
+
+-- DATEDIFF() function returns the number of date and time difference crossed between specified dates an an int 
+
+select DATEDIFF(DAY, 2019-31-01,2019-01-01) as 'datediff';
+
+-- DATEADD() function 
+
+-- add a new day to any specific date 
+
+select DATEADD(DAY, 1, GETDATE()) as 'DATEPlus';
+
+-- DATEPART() function 
+
+-- returns an integer corresponding to the datepart specified 
+
+select DATEPART(YEAR, GETDATE()) as 'Year';
+select DATEPART(DAYOFYEAR, GETDATE()) as 'DayofYear';
+select DATEPART(DAY, GETDATE()) as 'Day';
+select DATEPART(WEEK, GETDATE()) as 'WeekofYear';
+select DATEPART(HOUR, GETDATE()) as 'Hour';
+select DATEPART(MINUTE, GETDATE()) as 'Minute';
+select DATEPART(SECOND, GETDATE()) as 'Second'; 
