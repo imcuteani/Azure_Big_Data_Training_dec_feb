@@ -11,9 +11,9 @@
 -- with result set generated from the Union of both select statements. 
 
 -- syntax of Union operator  
-select col1, col2, col3 .... coln from tableA 
-UNION
-select col1, col2, col3 ... coln from tableB;  
+--select col1, col2, col3 .... coln from tableA 
+--UNION
+--select col1, col2, col3 ... coln from tableB;  
 
 use AdventureWorks2016;
 
@@ -59,6 +59,39 @@ p.FirstName
 FROM Person.Person p JOIN HumanResources.Employee e 
 ON p.BusinessEntityID = e.BusinessEntityID
 WHERE e.BusinessEntityID = 2
+
+-- EXCEPT Operator 
+
+-- will return the rows from the left-side table that doesn't exist in the right side table 
+
+select ProductID 
+FROM Production.Product 
+EXCEPT 
+select ProductID 
+FROM Production.ProductDocument
+
+select ProductID FROM Production.ProductDocument;
+
+-- alternate way 
+
+select a.ProductID
+FROM Production.Product a 
+INNER JOIN Production.ProductDocument b 
+ON a.ProductID != b.ProductID
+
+
+-- INTERSECT Operator 
+
+-- INTERSECT operator will return the rows/records where the rows on the left side or 
+-- right - hand can match 
+
+select ProductID
+FROM Production.Product 
+INTERSECT 
+select ProductID 
+FROM Production.ProductDocument
+
+
 
 
 
