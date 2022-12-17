@@ -21,7 +21,7 @@ use AdventureWorks2016;
 
 select VendorID, [2001], [2002], [2003], [2004]
 FROM (SELECT VendorID, PurchaseOrderID, Year(OrderDate)SubTotal
-FROM Purchasing.PurchaseOrderHeader) r  
+FROM Purchasing.PurchaseOrderHeader) r   
 PIVOT(COUNT(r.PurchaseOrderID)
 FOR SubTotal
 IN ([2001], [2002],[2003], [2004]))
