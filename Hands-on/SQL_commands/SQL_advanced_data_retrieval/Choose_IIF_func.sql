@@ -23,4 +23,20 @@ DISTINCT(FirstName + ' '+ LastName) AS NAME
 FROM Person.Person 
 ORDER BY Name ASC 
 
+select ModifiedDate from Person.Person;
 
+select OrderQty from Sales.SalesOrderDetail;
+
+-- IIF function in SQL Server 
+
+-- IIF is a logical function in TSQL and defines the one of the two values depending upon the condition met, 
+-- whether the boolean expression returned to be TRUE or FALSE 
+
+SELECT IIF(500<1000, 'YES', 'NO')
+
+-- IIF function returns true if a condition is TRUE, or another value is shown if the condition is false 
+
+-- IIF(condition, value_if_true, value_if_false)
+
+select SalesOrderID, OrderQty, IIF(OrderQty>5, 'More', 'Less')
+FROM Sales.SalesOrderDetail; 
