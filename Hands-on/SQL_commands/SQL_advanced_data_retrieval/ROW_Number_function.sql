@@ -13,6 +13,7 @@
 -- ORDER BY() clause defines the logical order of the rows within each partition of the result set. The
 -- ORDER BY clause is mandatory because the ROW_NUMBER() function is order sensitive. 
 
+-- OVER() is a method which determines the partitioning and ordering of a rowset before the ROW_NUMBER() function is applied 
 use AdventureWorks2016; 
 
 select 
