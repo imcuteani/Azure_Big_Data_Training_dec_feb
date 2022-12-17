@@ -52,8 +52,8 @@ GO
 
 -- Delete/ Drop the Stored Procedure
 
--- DROP PROCEDURE dbo.uspGetAddress
---GO 
+DROP PROCEDURE dbo.uspGetAddress
+GO 
 
 CREATE PROCEDURE dbo.uspGetNewAddress @City NVARCHAR(50)
 AS 
