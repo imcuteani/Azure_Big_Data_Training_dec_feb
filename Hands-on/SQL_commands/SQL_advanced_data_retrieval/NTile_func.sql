@@ -32,3 +32,5 @@ NTILE (4) OVER (
     ORDER BY ProductID
 ) ntile_group_productID 
 FROM Production.Product
+
+
