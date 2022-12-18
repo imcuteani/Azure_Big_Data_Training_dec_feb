@@ -1,0 +1,20 @@
+22-12-17 9:39:23.8812414 pid:5388 tid:57 sqltools Critical: 0 : Exception in IntelliCode extension for Microsoft SQL Language Server: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.VisualStudio.IntelliCode.SQL.PythiaService.GetRecommendationsAsync(ConnectionInfo connInfo, ScriptDocumentInfo scriptDocumentInfo, CompletionItem[] completions, CancellationToken cancellationToken)
+   at Microsoft.VisualStudio.IntelliCode.SQL.CompletionExtension.HandleCompletionAsync(ConnectionInfo connInfo, ScriptDocumentInfo scriptDocumentInfo, CompletionItem[] completions, CancellationToken token)
+22-12-17 10:04:25.4419832 pid:5388 tid:55 sqltools Critical: 0 : Exception in IntelliCode extension for Microsoft SQL Language Server: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.VisualStudio.IntelliCode.SQL.PythiaService.GetRecommendationsAsync(ConnectionInfo connInfo, ScriptDocumentInfo scriptDocumentInfo, CompletionItem[] completions, CancellationToken cancellationToken)
+   at Microsoft.VisualStudio.IntelliCode.SQL.CompletionExtension.HandleCompletionAsync(ConnectionInfo connInfo, ScriptDocumentInfo scriptDocumentInfo, CompletionItem[] completions, CancellationToken token)
+22-12-17 10:26:26.1490004 pid:5388 tid:49 sqltools Critical: 0 : Exception in IntelliCode extension for Microsoft SQL Language Server: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.VisualStudio.IntelliCode.SQL.PythiaService.GetRecommendationsAsync(ConnectionInfo connInfo, ScriptDocumentInfo scriptDocumentInfo, CompletionItem[] completions, CancellationToken cancellationToken)
+   at Microsoft.VisualStudio.IntelliCode.SQL.CompletionExtension.HandleCompletionAsync(ConnectionInfo connInfo, ScriptDocumentInfo scriptDocumentInfo, CompletionItem[] completions, CancellationToken token)
+22-12-17 11:00:45.7977193 pid:5388 tid:77 sqltools Critical: 0 : Exception in IntelliCode extension for Microsoft SQL Language Server: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.VisualStudio.IntelliCode.SQL.PythiaService.GetRecommendationsAsync(ConnectionInfo connInfo, ScriptDocumentInfo scriptDocumentInfo, CompletionItem[] completions, CancellationToken cancellationToken)
+   at Microsoft.VisualStudio.IntelliCode.SQL.CompletionExtension.HandleCompletionAsync(ConnectionInfo connInfo, ScriptDocumentInfo scriptDocumentInfo, CompletionItem[] completions, CancellationToken token)
+22-12-17 11:36:43.1642481 pid:5388 tid:60 sqltools Critical: 0 : Exception in IntelliCode extension for Microsoft SQL Language Server: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.VisualStudio.IntelliCode.SQL.PythiaService.GetRecommendationsAsync(ConnectionInfo connInfo, ScriptDocumentInfo scriptDocumentInfo, CompletionItem[] completions, CancellationToken cancellationToken)
+   at Microsoft.VisualStudio.IntelliCode.SQL.CompletionExtension.HandleCompletionAsync(ConnectionInfo connInfo, ScriptDocumentInfo scriptDocumentInfo, CompletionItem[] completions, CancellationToken token)
+22-12-17 12:27:06.7029850 pid:5388 tid:111 sqltools Critical: 0 : Exception in IntelliCode extension for Microsoft SQL Language Server: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.VisualStudio.IntelliCode.SQL.PythiaService.GetRecommendationsAsync(ConnectionInfo connInfo, ScriptDocumentInfo scriptDocumentInfo, CompletionItem[] completions, CancellationToken cancellationToken)
+   at Microsoft.VisualStudio.IntelliCode.SQL.CompletionExtension.HandleCompletionAsync(ConnectionInfo connInfo, ScriptDocumentInfo scriptDocumentInfo, CompletionItem[] completions, CancellationToken token)
+22-12-17 13:05:57.6086149 pid:5388 tid:111 sqltools Critical: 0 : Exception in IntelliCode extension for Microsoft SQL Language Server: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.
