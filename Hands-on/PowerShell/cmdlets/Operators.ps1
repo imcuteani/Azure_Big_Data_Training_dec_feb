@@ -78,8 +78,12 @@ $a -OR $b
 $str1 = "contoso"
 $str2 = "fabrikum"
 
+# check the character strings at the end 
 $str1 -like '*kum'
 $str2 -like '*kum'
+
+# check the character strings at the begining
+$str2 -like 'fab*'
 
 # not like operator
 
@@ -91,3 +95,11 @@ $str1 -notlike '*kum*'
 $str1 -match '[m$]'
 
 $str1 -notmatch '[k$]'
+
+# redirectional operator in PS 
+
+# redirectional operator assigns the output to be printed into redirected file / output device 
+echo "this is PowerShell training" > test.txt
+# $cmd > getfile.txt
+echo "this is an example of redirectional operator"> newfile.txt
+
