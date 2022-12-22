@@ -58,5 +58,17 @@ $a -le $b
 
 $a  -ge $b 
 
+# Logical Operators 
+
+# AND operators - if both of the variables are non-zero, then the condition becomes true 
+
+$a -AND $b 
+
+# OR operators - if one of the variable values are non-zero, then the condition becomes true
+
+$a -OR $b 
 
 
+# NOT operator - use to reverse the logical state of its operand. If a condition is true then logical NOT operator will make false
+
+-NOT ($a -AND $b)
