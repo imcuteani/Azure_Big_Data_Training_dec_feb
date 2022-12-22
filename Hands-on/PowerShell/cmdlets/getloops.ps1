@@ -37,5 +37,5 @@ $counter = 0;
 
 while($counter -lt $array.length) {
  $array[$counter]
- $counter += 1
+ $counter = $counter + 1
 }
