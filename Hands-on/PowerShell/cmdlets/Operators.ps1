@@ -36,4 +36,27 @@ $b / $a
 
 $b % $a 
 
+# Comparison Operators 
+
+# equal or not
+
+$a -eq $b
+
+# less than
+
+$a -lt $b 
+
+# not equal 
+
+$a -ne $b 
+
+# less than equals
+
+$a -le $b 
+
+# greater than equals
+
+$a  -ge $b 
+
+
 
