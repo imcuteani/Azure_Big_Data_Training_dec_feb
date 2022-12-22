@@ -14,8 +14,11 @@ $sublist = $mylist[1..3]
 Write-Host("Lets print the sub list of this array")
 $sublist
 
-# add new elements in the array 
+# add new elements in the first index position of this array 
 
 Write-Host("Assign new values to the array")
 $mylist[1] = 100
+$mylist
+
+$mylist[6] = 400
 $mylist
