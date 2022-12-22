@@ -11,3 +11,8 @@
 
 ConvertTo-Html -InputObject (Get-Date) | Out-File get-date.html
 Invoke-Item get-date.html
+
+# Get the alias details through PowerShell command & convert it into Html 
+
+Get-Alias | ConvertTo-Html | Out-File aliases.html 
+Invoke-Item aliases.html
