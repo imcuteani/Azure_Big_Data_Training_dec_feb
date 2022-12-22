@@ -72,3 +72,22 @@ $a -OR $b
 # NOT operator - use to reverse the logical state of its operand. If a condition is true then logical NOT operator will make false
 
 -NOT ($a -AND $b)
+
+# Like operators in PS 
+
+$str1 = "contoso"
+$str2 = "fabrikum"
+
+$str1 -like '*kum'
+$str2 -like '*kum'
+
+# not like operator
+
+$str2 -notlike '*kum*'
+$str1 -notlike '*kum*'
+
+# match operators in PS 
+
+$str1 -match '[m$]'
+
+$str1 -notmatch '[k$]'
