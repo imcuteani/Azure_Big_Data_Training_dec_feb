@@ -5,10 +5,13 @@
 
 Get-Service | Where-Object {$_.Status -eq "Stopped"}
 
-Get-Service | Where-Object {$_.Status -eq "Running"}
+Get-Service | Where-Object {$_.Status -eq "Running"} 
+
+Get-Service | Format-List  # Get services displayed in a format list 
 
 # Get Processes based on a process name 
 
 #Get the list of Windows processes that matches with the alphabet of p 
 
 Get-Process | Where-Object {$_.ProcessName -match "^p.*"}
+
