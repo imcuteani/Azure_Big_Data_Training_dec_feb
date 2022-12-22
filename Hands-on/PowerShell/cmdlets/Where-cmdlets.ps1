@@ -15,3 +15,7 @@ Get-Service | Format-List  # Get services displayed in a format list
 
 Get-Process | Where-Object {$_.ProcessName -match "^p.*"}
 
+# Select-Object cmdlet is used to select objects and its properties 
+
+Get-Process | Select-Object -Property ProcessName, Id -Last 5 
+
