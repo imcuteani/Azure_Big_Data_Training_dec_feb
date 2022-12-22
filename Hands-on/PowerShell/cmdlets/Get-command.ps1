@@ -9,6 +9,8 @@ Get-Help Format-Table
 
 Get-Service "sql*"
 
+Get-Service "vm*"
+
 # Get-Members of the SQL processes running in the system
 # "|" is called pipe operator in PowerShell scripting which's used to concatenate two commands
 
