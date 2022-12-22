@@ -20,7 +20,7 @@
 
 "big" -match "b[iou]g"
 
-# Matches with at least of one of the characters found within the range in the begining of alphasets/charaters and the next set of characters  or not 
+# Matches with at least of one of the characters found within the range in the begining of alphabets/charaters and the next set of characters  or not 
 
 "second" -match "[a-e]nd"
 
