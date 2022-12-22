@@ -100,6 +100,6 @@ $str1 -notmatch '[k$]'
 
 # redirectional operator assigns the output to be printed into redirected file / output device 
 echo "this is PowerShell training" > test.txt
-# $cmd > getfile.txt
+$cmd > getfile.txt
 echo "this is an example of redirectional operator"> newfile.txt
 
