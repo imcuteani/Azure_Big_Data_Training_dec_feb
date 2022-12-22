@@ -35,3 +35,30 @@ if($x -eq 10){
 }else {
     Write-Host("This is the Else statement")
 }
+
+# Switch case statement 
+
+switch (4,2) {
+    1  {"One"}
+    2 {"Two"}
+    3 {"Three"}
+    4 {"Four"}
+    3 {"Three again"}
+}
+
+switch (3) {
+    1  {"One"}
+    2 {"Two"}
+    3 {"Three"}
+    4 {"Four"}
+    3 {"Three again"}
+}
+
+# switch case statement with break 
+switch (3) {
+    1  {"One"}
+    2 {"Two"}
+    3 {"Three"; break}
+    4 {"Four"}
+    3 {"Three again"}
+}
