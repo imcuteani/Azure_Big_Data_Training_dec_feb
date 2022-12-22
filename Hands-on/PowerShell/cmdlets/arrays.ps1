@@ -2,11 +2,11 @@
 
 $mylist = 5.6, 3.4, 6.5, 7.8, 34.0, 23.0, 44.5, 99.45, 110.12
 Write-Host("Get the length of the array")
-$mylist.Length
+#$mylist.Length
 
 
 # processing arrays 
-Write-Host("Get the fifth element of the array")
+Write-Host("Get the fifth index position element of the array")
 $mylist[5]
 
 Write-Host("Return partial array")
@@ -21,4 +21,7 @@ $mylist[1] = 100
 $mylist
 
 $mylist[6] = 400
+$mylist
+
+$mylist[8] = 10.44
 $mylist
