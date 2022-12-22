@@ -10,6 +10,12 @@
 
 "book" -match "a..c"
 
+"copy" -match "c..o"
+
+# check the matches with any of the single character one from starting of character and another from end
+
+"copy" -match "c..y"
+
 # Logic matches at one of characters in the brackets 
 
 "big" -match "b[iou]g"
