@@ -8,6 +8,12 @@ go
 
 -- select top 10 customerID from SalesLT.Customer 
 
+-- Group By clause is utilized with the SELECT statement
+-- GROUP BY aggregates the results on the basis column: COUNT, MAX, MIN, SUM and AVG 
+-- GROUP BY returns only one result per group of data
+-- GROUP BY clause always follows the WHERE clause
+-- GROUP BY clause always precedes the ORDER BY clause 
+
 -- The IN operator is a logical operator that allows to test whether a specified value matches with any values in a list 
 
 select 
