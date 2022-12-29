@@ -14,6 +14,9 @@ GO
 
 -- Invoke the Stored procedure with Wildcard parameter
 
+use AdventureWorks2016
+GO 
+
 EXEC dbo.uspGetAddressWildCard @City = 'New' 
 GO
 

@@ -33,6 +33,8 @@ FROM
 Production.Product
 where ListPrice > 7.99 OR ListPrice < 34.99;
 
+use "AdventureWorks2016"
+
 select ProductID, 
 Name, 
 StandardCost, 

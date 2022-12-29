@@ -21,6 +21,7 @@ Production.Product
 ORDER BY 
 ListPrice DESC;
 
+select * from Production.Product
 
 -- using TOP to return a % of rows 
 

@@ -15,7 +15,7 @@ create table Products.Product
 ProductName VARCHAR(50) NOT NULL,
 ProductCost MONEY NOT NULL CHECK (ProductCost > 0),
 ListPrice MONEY NOT NULL CHECK (ListPrice > 0),
-ProductMargin AS (ListPrice - ProductCost),
+ProductMargin AS (ListPrice - ProductCost),  -- Computed columns
 ProductDescription NVARCHAR(100) NULL,
 CONSTRAINT pk_product PRIMARY KEY (ProductID))
 go 
