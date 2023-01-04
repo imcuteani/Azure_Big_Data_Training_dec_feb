@@ -19,3 +19,7 @@ az storage container create --resource-group cg_adf_hol --name cgstoragedemocont
 # upload the sample data file to Azure storage container 
 
 az storage blob upload --account-name cgstoragedemo --name /home/anindita/emp.txt --container-name cgstoragedemocontainer --file emp.txt --auth-mode key
+
+# Create ADF linked service 
+
+az datafactory linked-service create --resource-group <your_resource_group> --factory-name <factory_name> --linked-service-name <linked_service_name> --properties @dataset_sql.json
