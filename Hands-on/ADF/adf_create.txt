@@ -1,0 +1,8 @@
+# Create ADF through Azure CLI 
+
+az datafactory create --resource-group <your_resource_group> --factory-name <data_factory_name>
+
+
+# Data factory details can be found by using az datafactory show command 
+
+az datafactory show --resource-group <your_resource_group> --factory_name <factory_name>
