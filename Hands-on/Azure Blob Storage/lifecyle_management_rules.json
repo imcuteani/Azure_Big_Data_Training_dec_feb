@@ -1,0 +1,30 @@
+{
+    "rules": [
+      {
+        "enabled": true,
+        "name": "cgbloblifecyclepolicy",
+        "type": "Lifecycle",
+        "definition": {
+          "actions": {
+            "baseBlob": {
+              "tierToCool": {
+                "daysAfterModificationGreaterThan": 30
+              },
+              "tierToArchive": {
+                "daysAfterLastTierChangeGreaterThan": 7,
+                "daysAfterModificationGreaterThan": 90
+              },
+              "delete": {
+                "daysAfterModificationGreaterThan": 180
+              }
+            }
+          },
+          "filters": {
+            "blobTypes": [
+              "blockBlob"
+            ]
+          }
+        }
+      }
+    ]
+  }
