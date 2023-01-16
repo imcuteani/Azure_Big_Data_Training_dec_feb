@@ -71,4 +71,19 @@ https://download.microsoft.com/download/4/8/6/486005eb-7aa8-4128-aac0-6569782b37
 	DimProductCategory - SpanishProductCategoryName, FrenchProductCategoryName
 	DimProductSubCategory - SpanishProductSubCategoryName, FrenchProductSubCategoryName
 	FactInternetSales - no need to remove any columns 
+
+
+    Calculated columns created through DAX formula
+
+    Calculated Column 
+
+1. MonthCalendar - =RIGHT(" " & FORMAT([MonthNumberOfYear],"#0"), 2) & " - " & [EnglishMonthName]
+
+2. DayOfWeek = =RIGHT(" " & FORMAT([DayNumberOfWeek],"#0"), 2) &  " - "  &[EnglishDayNameOfWeek]
+
+3. Rename the column as ProductCategoryName of DimProduct table =RELATED('DimProductSubcategory'[EnglishProductSubcategoryName])
+
+4. Bring the column EnglishProductCategoryName from DimProductCategory table = =RELATED('DimProductCategory'[EnglishProductCategoryName])
+
+5. Calculate the product margin from the FactInternetSales table   =[SalesAmount]-[TotalProductCost]
 	
