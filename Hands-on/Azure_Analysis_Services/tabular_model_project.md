@@ -86,4 +86,74 @@ https://download.microsoft.com/download/4/8/6/486005eb-7aa8-4128-aac0-6569782b37
 4. Bring the column EnglishProductCategoryName from DimProductCategory table = =RELATED('DimProductCategory'[EnglishProductCategoryName])
 
 5. Calculate the product margin from the FactInternetSales table   =[SalesAmount]-[TotalProductCost]
+
+
+=RIGHT(" " & FORMAT([MonthNumberOfYear],"#0"), 2) & " - " & [EnglishMonthName]
+    
+5. Calculate the product margin from the FactInternetSales table   =[SalesAmount]-[TotalProductCost]
+
+    
+The CURRENTGROUP function takes no arguments and is only supported as the first argument of the functions - AVERAGEX, COUNTX, MAXX, MINX
+
+
+	GROUPBY function in DAX is useful to group by columns with no lineage
+	Each column added by GROUPBY must iterate CURRENTGROUP()
+	We cant use CALCULATE inside a GROUPBY iteration of DAX 
+
+
+
+=GROUPBY(Customers, [Customer Category], "#Customers", COUNTX( CURRENTGROUP(), 1))
+
+= GROUPBY(SalesByCountryAndCategory, GeoGraphy[Country], "Max Sales", MAXX(CURRENTGROUP(), [Total Sales])
+
+
+    
+1. Create a DaysCurrentQuarterToDate measure in the DimDate table 
+
+
+
+DaysCurrentQuarterToDate:=COUNTROWS(DATESQTD('DimDate'[Date]))
+
+
+
+
+    
+2. Calculate the DaysInCurrentQuarter measure in DimDate table 
+
+
+DaysInCurrentQuarter:=COUNTROWS(DATESBETWEEN('DimDate'[Date],STARTOFQUARTER(LASTDATE('DimDate'[Date])), ENDOFQUARTER('DimDate'[Date])))
+ 
+
+
+
+    3. Count the distinct Sales order
+Distinct Count SalesOrderNumber:= DISTINCTCOUNT(FactInternetSales[SalesOrderNumber])
+4. Sum of total orders
+InternetTotalUnits:= SUM(FactInternetSales[OrderQuantity])
+5. Sum of product cost
+InternetTotalProductCost:= SUM(FactInternetSales[TotalProductCost])
+
+    5. Sum of product cost
+InternetTotalProductCost:= SUM(FactInternetSales[TotalProductCost])
+6. Sum of Freight
+InternetTotalFreight:=SUM(FactInternetSales[Freight])
+7. Sum of Tax Amount
+InternetTotalTax:=SUM(FactInternetSales[TaxAmt])
+8. Sum of Sales Amount
+InternetTotalSales:=SUM(FactInternetSales[SalesAmount])
+9. Sum of Product Margin
+InternetTotalMargin:=SUM(FactInternetSales[Margin])
+
+
+3. Rename the column as ProductCategoryName of DimProduct table =RELATED('DimProductSubcategory'[EnglishProductSubcategoryName])
+4. Bring the column EnglishProductCategoryName from DimProductCategory table = =RELATED('DimProductCategory'[EnglishProductCategoryName])
+
+
+
+1. MonthCalendar - =RIGHT(" " & FORMAT([MonthNumberOfYear],"#0"), 2) & " - " & [EnglishMonthName]
+
+ 
+
+2. DayOfWeek = =RIGHT(" " & FORMAT([DayNumberOfWeek],"#0"), 2) &  " - "  &[EnglishDayNameOfWeek]
+
 	
