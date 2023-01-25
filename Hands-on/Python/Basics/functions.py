@@ -60,6 +60,29 @@ print(test1, 'is', bool(test1))
 test1 = 'Hello Python'
 print(test1, 'is', bool(test1))
 
+# bytes() function is used to check over if the object passed can be called or not & returns the byte object. 
+
+string = "hello python"
+array = bytes(string, 'utf-8')
+print(array)
+
+
+# compile() takes source code as input and returns the code object which can later be executed by exec() function
+
+code_str = 'x = 5\ny = 10 \nprint("sum", x + y)'
+code = compile(code_str, 'sum_py', 'exec')
+print(type(code))
+exec(code) 
+
+x = 40
+a = compile('x == 40', '', 'eval')
+print(eval(a))
+
+x = 60 
+
+a = compile('x', 'test', 'single')
+print(type(a))
+exec(a)
 
 
 
