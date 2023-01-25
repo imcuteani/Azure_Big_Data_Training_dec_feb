@@ -34,5 +34,42 @@ def fib(n):   # write a fibonacci series upto n numbers
         a, b = b, a + b
         print()
 
-fib(2000)        
+fib(2000)       
+
+
+# Given an input string in python whether it's palindrome or not, a string is said to be palindrome if the reverse 
+# of the string is the same as the original string. 
+
+# find the reverse of the string
+# check if the reverse and the original string are same or not 
+
+# using lists and reverse() method to check whether a given input string is palindrome or not 
+
+# the extend() function adds the specified list of elements (or any other iterable) to the end of the current list 
+
+
+def isPalindrome(s):
+    x = list(s)
+    y = []
+    y.extend(x)
+    x.reverse()
+    if (x == y):
+        return True
+    return False
+
+
+ # driver code block 
+ 
+
+s = "malayalam"
+a = "python"
+val = isPalindrome(s)
+val1 = isPalindrome(a)
+
+if val1:
+    print("Yes, the string is palindrome")
+else: 
+    print("No, the given input string is not a palindrome")   
+
+
               
