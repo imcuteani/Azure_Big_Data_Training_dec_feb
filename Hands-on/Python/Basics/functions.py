@@ -62,6 +62,9 @@ print(test1, 'is', bool(test1))
 
 # bytes() function is used to check over if the object passed can be called or not & returns the byte object. 
 
+# byte() function in python can convert objects into byte objects, or it can create empty bytes objects of the specified size. 
+
+
 string = "hello python"
 array = bytes(string, 'utf-8')
 print(array)
@@ -94,11 +97,16 @@ print(any(I))
 
 # ASCII() function returns a string containing the printable representation of an object 
 
+# ascii() function returns a readable version of any object (Strings, tuples, lists, etc.)
+
 normalText = "Python is the most popular programming language in 2022"
 print(ascii(normalText))
 
 # bytearray() returns a bytearray object and can convert objects into bytearray objects, also it can create an empty
 # bytearray object 
+
+# bytearray() function in python returns a bytearray object. It can convert objects to bytearray objects. 
+# the bytearray() function can create an empty bytearray objects of the specified size 
 
 string = "python is a high level programming language"
 
@@ -107,12 +115,23 @@ print(arr)
 
 # format() represents the formatted representation of the given value 
 
+# the format() function formats the specified values and insert them inside the string's placeholder. 
+# the placeholder is defined using the curly brackets in syntax. The format() method returns the formatted string. 
+
 # float format 
 
-print(format(125.555556, "f"))
+print(format(126, "f"))
 
-print(format(125,"d"))
+print(format(125,"b"))
 
 # binary format
 
 print(format(12,"b"))
+
+txt1 = "The name of the person is {0} , his age is {1} ".format("John", 35)
+print(txt1)
+
+# Difference between byte() and bytearray() func in Py 
+
+# the difference between byte() and bytearray() func is that byte() returns an object that cannot be modified. 
+# the bytearray() returns an object which can be modified. 
