@@ -55,9 +55,18 @@ print(normal_set)
 
 
 # a frozen set 
+# a frozenset() method creates an immutable Set object from an iterable. It's a built-in python function. 
+# As it is a Set object, he  
 frozen_set = frozenset(["mango", "lichie", "pineapple", "starapple"])
 print("\nFrozenSet")
 print(frozen_set)
+
+
+animals = {'cat', 'dog'}
+print('cat' in animals)  # checks is an element is a set, prints true
+print('fish' is animals)
+
+
 
 
 
