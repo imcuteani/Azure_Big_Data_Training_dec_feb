@@ -135,3 +135,50 @@ print(txt1)
 
 # the difference between byte() and bytearray() func is that byte() returns an object that cannot be modified. 
 # the bytearray() returns an object which can be modified. 
+
+# map() function is used to return a list of results after applying a given function to each item of an iterable(list, tuple) etc. 
+
+def calculateAddition(n):
+    return n + n
+
+numbers = (1, 5)
+result = map(calculateAddition, numbers)
+print(result) 
+
+# converting map object to an set 
+
+numbersAddition = set(result)
+print(numbersAddition)
+
+# enumerate() function returns enumerated object 
+
+result = enumerate([1, 2, 3])
+print(result)
+print(list(result))
+
+# dict() function which is constructor helps to create a dictionary 
+# if no arguments are passed, it creates an empty dictionary 
+# if a positional arguments are given, a dictionary that it creates, with the same key-value pairs. 
+# if any keyword arguments are given, the keyword arguments and their values are added to the dictionary which has been created from the positional argument. 
+
+result = dict() 
+result2 = dict(a = 1, b = 2)
+
+print(result)
+print(result2)
+
+#filter() function is used to get filtered elements. This function actually takes two arguments. 
+# first one is function and second one is the iterable. 
+# the filter() function returns a sequence of those elements of iterable object which returns true value. 
+
+def filterdata(x): 
+    if x > 5:
+        return x
+        
+result = filter(filterdata, (1, 2, 6))
+
+# display the result 
+print(list(result))
+
+
+
