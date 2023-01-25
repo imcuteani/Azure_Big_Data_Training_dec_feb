@@ -35,3 +35,33 @@ print(all(k))
 
 k = []
 print(all(k))
+
+# bin() function is used to return the binary representation of any integer 
+
+x = 10
+y = bin(x)
+print(y)
+
+# boolean function 
+
+test1 = [] 
+print(test1, 'is', bool(test1))
+
+test1 = [0]
+print(test1, 'is', bool(test1))
+
+
+test1 = 0.0
+print(test1, 'is', bool(test1))
+
+test1 = None
+print(test1, 'is', bool(test1))
+
+test1 = 'Hello Python'
+print(test1, 'is', bool(test1))
+
+
+
+
+
+
