@@ -64,7 +64,23 @@ print(frozen_set)
 
 animals = {'cat', 'dog'}
 print('cat' in animals)  # checks is an element is a set, prints true
-print('fish' is animals)
+print('fish' is animals) # checks whether the fish element is present, if not shows false. 
+animals.add('fish')
+print('fish' in animals) # prints as true
+print(len(animals))
+animals.remove('cat')
+print(len(animals))
+
+# For Loop over Set data type in Python 
+
+animals = {'cat', 'dog', 'leopard'} 
+for id, animal in enumerate(animals):
+    print('%d: %s' % (id + 1, animal))
+
+    
+
+ 
+
 
 
 
