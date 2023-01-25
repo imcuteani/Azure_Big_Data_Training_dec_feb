@@ -180,5 +180,53 @@ result = filter(filterdata, (1, 2, 6))
 # display the result 
 print(list(result))
 
+# hash() function is used to return the hash value of an object 
+
+# the hash values are integers and are used to compare the dictionary keys during a dictionary lookup. 
+# we can hash only the types which are hashable in python
+
+# bool, int, float, long, string, unicode, tuple, code object
+
+result = hash(20) # input value 
+result1 = hash(22.6) #floating value
+
+print(result)
+print(result1)
+
+# slice() function is used to retrieve a slice of elements in a collection of elements. 
+
+result1 = slice(5)
+result2 = slice(0,5,3) # returns the slice object
+
+print(result1)
+print(result2)
+
+# sorted() function in python is used the sort the elements in a list 
+
+str = "pythonisamazing"
+asortedlist = sorted(str)
+print(asortedlist)
+
+
+#input() function is used to get an input from the user 
+
+val = input("enter a value: ")
+print("You entered: ", val)
+
+# reversed() is used to return the reversed iterator of the given sequence 
+
+Tuple1 = ('n', 'o', 'h', 't', 'y', 'p')
+print(list(reversed(Tuple1)))
+
+# range() function we can declare of range input values in numeric format 
+
+Range = range(5, 12)
+print(list(reversed(Range)))
+
+
+
+
+
+
 
 
