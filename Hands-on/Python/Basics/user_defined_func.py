@@ -24,4 +24,15 @@ def hello(name, loud = False):
 
 hello('Roger')
 hello('Fredrick', loud = True)
+
+# Write a fibonacci series in py upto n 
+
+def fib(n):   # write a fibonacci series upto n numbers 
+    a, b = 0, 1
+    while a < n:
+        print(a, end=' ')
+        a, b = b, a + b
+        print()
+
+fib(2000)        
               
