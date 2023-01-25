@@ -17,7 +17,52 @@ print(d.get('chem', 'N/A'))  # 'chem' is not longer a key, prints 'N/A'
 
 # Looping over dictionaries for iteration
 
-d = {'person' : 2, 'cat' : 4, 'spider' : 8}
-for animal in d: 
-    legs = d[animal]
+dict = {'person' : 2, 'cat' : 4, 'spider' : 8}
+for animal in dict: 
+    legs = dict[animal]
     print('A %s has %d legs' % (animal, legs))
+
+
+# Sets are the underordered collection of distinct elements in Python
+
+# Sets as the unordered collection of datatype which is iterable, mutable and has no duplicate elements
+
+# The major advantage of Set is that highly optimized method for checking whether a specific element is contained in the set. 
+
+# Set is based on data structure known as hash table. Since, sets are unordered, we can't access items using indexes as we can perform using lists. 
+
+#typecasting of lists to set 
+
+myset = set(["apple", "banana", "cherry"])
+print(myset)
+
+# adding an element 
+myset.add("fig")
+print(myset)
+
+# frozen Sets in Python 
+
+# Frozen sets in python refers to the immutable objects which only supports method and operators which produce 
+# a result without affecting the frozen set or sets in which it's applied. 
+
+# while the elements of a set can be modified at any time, elements of the frozen set remain the same after creation
+
+# if no parameters are passed, it returns an empty frozenset
+
+
+normal_set = set(["apple", "banana", "cherry"])
+print(normal_set)
+
+
+# a frozen set 
+frozen_set = frozenset(["mango", "lichie", "pineapple", "starapple"])
+print("\nFrozenSet")
+print(frozen_set)
+
+
+
+
+
+
+
+
