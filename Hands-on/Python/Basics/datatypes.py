@@ -37,3 +37,20 @@ c = 3 + 4j
 print("The type of c: ", type(c))
 print("c is complex number: ", isinstance(3 + 4j, complex))
 
+# string operations 
+
+str = "Hello this is Python programming"
+print(str)
+hello = 'hello'
+print(len(hello))
+world = 'world'
+hw = hello + ' ' + world  # string concatenation in python
+print(hw) 
+
+# apply string formatting with sprintf style 
+
+hw12 = '%s %s %d' % (hello, world, 12)
+print(hw12)
+
+
+
