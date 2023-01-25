@@ -84,7 +84,35 @@ a = compile('x', 'test', 'single')
 print(type(a))
 exec(a)
 
+# any() function returns true if any item in an iterable is true, else returns false. 
 
+I = [4, 6, 8, 10]
+print(any(I))
 
+I = [0, False]
+print(any(I))
 
+# ASCII() function returns a string containing the printable representation of an object 
 
+normalText = "Python is the most popular programming language in 2022"
+print(ascii(normalText))
+
+# bytearray() returns a bytearray object and can convert objects into bytearray objects, also it can create an empty
+# bytearray object 
+
+string = "python is a high level programming language"
+
+arr = bytearray(string, 'utf-8')
+print(arr)
+
+# format() represents the formatted representation of the given value 
+
+# float format 
+
+print(format(125.555556, "f"))
+
+print(format(125,"d"))
+
+# binary format
+
+print(format(12,"b"))
