@@ -23,7 +23,7 @@ print(nums[2:4])        # Get a slice from the index position of 2 to 4
 # Get a slice from index 2 to end of list 
 print(nums[2:]) 
 
-# Get a slice of list from start to index 2 (exclusive)
+# Get a slice of list from start to index 3 (exclusive)
 
 print(nums[:3])
 
