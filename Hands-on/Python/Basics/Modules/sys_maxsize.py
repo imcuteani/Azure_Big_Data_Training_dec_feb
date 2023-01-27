@@ -27,3 +27,20 @@ try:
 except Exception as e:
     print(e)
     print("List creation unsuccessful")       
+
+
+import os 
+cwd = os.getcwd()   # get current working directory in Py 
+print("Current working directory in Py: ", cwd)
+os.chdir('../')        # change the directory 
+
+
+# list the files and folders within the directory 
+
+path = "/"
+dir_list = os.listdir(path)
+
+print("Files and Directories in: '", path,"' : ")
+
+# print the list 
+print(dir_list)
