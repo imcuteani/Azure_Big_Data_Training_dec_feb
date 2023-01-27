@@ -2,7 +2,7 @@
 # can be done using the exception handling mechanism. In python we can achive it through try and except block. 
 # try -- run the code
 # except -- execute this code when there's an exception 
-# else -- no expression run this code 
+# else -- no expression run this code, through the else statement, we can instruct the program to execute the certain block code only in the absence of exceptions. 
 # finally -- always execute the code within this block 
 
 
