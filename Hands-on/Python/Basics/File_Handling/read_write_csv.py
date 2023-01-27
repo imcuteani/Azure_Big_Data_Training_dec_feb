@@ -21,24 +21,26 @@ import csv
 
 cols = ['Name','Branch','Year','Skills']
 
-rows =  [ ['Nelson', 'COE', '2020', 'javascript'],
-          ['Susan', 'Cloud', '2021', 'AWS'],
-          ['Alan', 'IT', '2019', 'VMware'],
-          ['Matt', 'COE', '2018', 'Azure'] ]
+rows =  [ ['Nelson', 'COE', '2', 'javascript'],
+          ['Susan', 'Cloud', '2', 'AWS'],
+          ['Alan', 'IT', '1', 'VMware'],
+          ['Matt', 'COE', '8', 'Azure'] ]
 
 filename = "employee_records.csv"
 
 # writing to the csv file 
 
 with open(filename, 'w') as csvfile:
-    csvwriter = csv.writer(csvfile)
+    #csvwriter = csv.writer(csvfile)
+    writer = csv.DictWriter(csvfile, fieldnames= cols)
 
 # writing the fields 
 
-csvwriter.writerow(cols)
+#csvwriter.writerow(cols)
+writer.writeheader()
 
 # writing the data rows 
-csvwriter.writerows(rows)
-csvfile.close()
+#csvwriter.writerows(rows)
+writer.writerows(rows)
 
 
