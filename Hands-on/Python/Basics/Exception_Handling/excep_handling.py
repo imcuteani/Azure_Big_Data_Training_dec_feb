@@ -34,4 +34,43 @@ except ValueError:
 except ZeroDivisionError: 
     print('Zero Division error occured')
 
+# type_error exception handling
+
+try: 
+    name = input('Enter your name: ')
+    year_born = input('Enter your Birth year: ')
+    age = 2023 - int(year_born)
+    print(f'You are {name}, and your age is {age}.')
+
+except TypeError:
+    print('Type error occurred') 
+
+except ValueError: 
+      print('Value error occurred ') 
+
+except ZeroDivisionError: 
+    print('Zero Division error occured')
+
+else: 
+    print('I usually run this try block')
+
+finally: 
+    print('This is an exception handling example')
+
+
+# just passing the exception block 
+
+try: 
+    name = input('Enter your name:')
+    year_born = input('Your Birth Year:')
+    age = 2023 - int(year_born)
+    print('You are {name}.And your age is {age}.', age)
+
+except Exception as e:
+    print(e) 
+
+
+
+
+
 
