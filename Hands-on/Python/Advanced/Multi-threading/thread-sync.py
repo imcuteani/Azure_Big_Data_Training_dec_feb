@@ -21,7 +21,7 @@ def increment_val():
 
 def thread_task(lock):                # target function of the threads  
     for _ in range(100000):           # calls the thread upto 1M times 
-        lock.acquire()     
+        lock.acquire()                # to acquire a lock 
         increment_val() 
         lock.release()
 
