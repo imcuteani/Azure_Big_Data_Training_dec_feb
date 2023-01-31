@@ -21,3 +21,12 @@ schema = StructType([
 df = spark.createDataFrame(emptyRDD, schema)
 df.printSchema() 
 
+# Convert empty RDD to Dataframe 
+df1 = emptyRDD.toDF(schema)
+df1.printSchema() 
+
+#Create empty Dataframe directly 
+df2 = spark.createDataFrame([], schema)
+df2.printSchema()
+
+
