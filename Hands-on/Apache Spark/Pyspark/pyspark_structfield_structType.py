@@ -23,13 +23,24 @@ schema = StructType([ \
 ... StructField("salary",IntegerType(),True)])
 df = spark.createDataFrame(data=data, schema=schema)
 df.printSchema()
-root
- |-- firstname: string (nullable = true)
- |-- middlename: string (nullable = true)
- |-- lastname: string (nullable = true)
- |-- id: string (nullable = true)
- |-- gender: string (nullable = true)
- |-- salary: integer (nullable = true)
-
 df.show(truncate=False)
+ 
+ # # nested StructType object where df contains nested StructType column
+
+ structureData = [ 
+    ((""James","K","Smith"),"36634","M", 3100),
+    (("Michael","A","Rose"),"40288","M",2400),
+    (("Robert","","Willams"),"42411","M","3600"),
+    (("Maria","Mary","B","42332","F",6700))] 
+ structureSchema = StructType([
+    StructField('name',StructType([
+        StructField('firstname', StringType(), True),
+        StructField('middlename', StringType(),True),
+        StructField('lastname', StringType(),True)
+    ])),
+    StructField('id',StringType(),True),
+    StructField('gender',StringType(),True),
+    StructField('salary',IntegerType(),True)]) 
+
+
  
