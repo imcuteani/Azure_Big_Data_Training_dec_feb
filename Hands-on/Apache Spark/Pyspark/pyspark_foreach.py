@@ -28,7 +28,7 @@ accum=spark.sparkContext.accumulator(0)
 df.foreach(lambda x:accum.add(int(x.Seqno)))
 print(accum.value)
 
-# apply foreach action on pyspark dataframe 
+# syntax to apply foreach action on pyspark dataframe 
 def f(df):
 ...     print(df.Seqno)
 df.foreach(f)
