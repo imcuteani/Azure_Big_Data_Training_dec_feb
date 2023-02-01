@@ -59,3 +59,54 @@ df.select(col("firstname"),col("lastname")).show()
 |    Maria|   Brown|
 +---------+--------+
 
+
+df.select(*columns).show()
++---------+--------+-------+------+
+|firstname|lastname|country| state|
++---------+--------+-------+------+
+|    James|   Smith|     US|    CA|
+|  Michael|    Rose|     US|    NY|
+|   Robert| William|     UK|London|
+|    Maria|   Brown|     US|    FL|
++---------+--------+-------+------+
+
+df.select([col for col in df.columns]).show()
++---------+--------+-------+------+
+|firstname|lastname|country| state|
++---------+--------+-------+------+
+|    James|   Smith|     US|    CA|
+|  Michael|    Rose|     US|    NY|
+|   Robert| William|     UK|London|
+|    Maria|   Brown|     US|    FL|
++---------+--------+-------+------+
+
+df.select("*").show()
++---------+--------+-------+------+
+|firstname|lastname|country| state|
++---------+--------+-------+------+
+|    James|   Smith|     US|    CA|
+|  Michael|    Rose|     US|    NY|
+|   Robert| William|     UK|London|
+|    Maria|   Brown|     US|    FL|
++---------+--------+-------+------+
+
+df.select(df.columns[:3]).show(3)
++---------+--------+-------+
+|firstname|lastname|country|
++---------+--------+-------+
+|    James|   Smith|     US|
+|  Michael|    Rose|     US|
+|   Robert| William|     UK|
++---------+--------+-------+
+#only showing top 3 rows
+
+df.select(df.columns[2:4]).show(3)
++-------+------+
+|country| state|
++-------+------+
+|     US|    CA|
+|     US|    NY|
+|     UK|London|
++-------+------+
+#only showing top 3 rows
+
