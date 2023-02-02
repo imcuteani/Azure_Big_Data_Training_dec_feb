@@ -6,11 +6,11 @@ sudo -H pip3 install --upgrade pip
 
 sudo -H pip3 install virtualenv 
 
-mkdir jupter 
+mkdir jupyter 
 
 # move inside the directory 
 
-cd jupyer 
+cd jupyter 
 
 virtualenv environment 
 
