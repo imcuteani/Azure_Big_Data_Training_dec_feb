@@ -24,3 +24,20 @@ pip install jupyter
 
 jupyter notebook --ip=*
 
+# Stop the Jupyter notebook instance 
+
+pip install findspark 
+
+# again restart Jupyter notebook 
+
+
+jupyter notebook --ip=*
+
+# Create a new ipython notebook 
+
+import findspark
+findpark.init()
+import pyspark 
+
+
+
