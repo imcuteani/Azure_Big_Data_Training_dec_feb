@@ -20,3 +20,7 @@ source environment/bin/activate
 
 pip install jupyter 
 
+# open Jupyer notebook terminal 
+
+jupyter notebook --ip=*
+
