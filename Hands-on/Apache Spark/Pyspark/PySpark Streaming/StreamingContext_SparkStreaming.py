@@ -47,3 +47,7 @@ wordcounts.pprint()  # which will print a few of the counts of words generated e
 
 ssc.start()  # start the computation 
 ssc.awaitTermination()  # wait for the computation to terminate 
+
+# Execute PySpark streaming job 
+
+./bin/spark-submit examples/src/main/python/streaming/network_wordcount.py localhost 9999
