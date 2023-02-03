@@ -15,7 +15,8 @@
 # The streaming data sources can be file source, Kafka source, socket sources, rate per micro-batch source. 
 # Generate the streaming dataframes which are untyped meaning that schema of the DataFrame is not checked at the compile time but only checked at runtime while the query is submitted. 
 # To implement it, we can convert the untyped streaming dataframes to typed streaming dataframes using the same methods as static DataFrame. 
-# 
+# In this following program, we've converted the untyped schema of the dataframe running on PySpark Strucred streaming API to typed schema means the schema of the dataframe running over TCP sockets
+# can be checked even at compile time
  
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import explode
